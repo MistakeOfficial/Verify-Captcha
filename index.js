@@ -1,4 +1,17 @@
 const { Client } = require("discord.js");
+
+const express = require('express')
+const app = express()
+
+app.get('/', function (req, res) {
+  res.send('WayBackHome')
+})
+
+app.listen(3000)
+
+
+
+
 const { token, guildId } = require("./config");
 
 const client = new Client({
